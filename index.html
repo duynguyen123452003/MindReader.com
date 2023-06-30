@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./mind reader.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container__logo">
+            <img src="./mind reader.png" alt="" class="container__img">
+            <div class="mind__reader">
+                <div class="mind__m">M</div>
+                <div class="mind__ind">ind</div>
+                <div class="reader__r">R</div>
+                <div class="reader__eader">eader</div>
+            </div>
+        </div>
+        <div class="container__input">
+            <input type="password" class="input__number" id="input__number" placeholder="Vui lòng nhập các số từ 1 tới 9999">
+            <i class="fa-solid fa-eye" id="eye"></i>
+        </div>
+        <div class="container__btn">
+            <button class="btn">
+                ĐỌC
+            </button>
+        </div>
+        <div class="alert">
+            
+        </div>
+        <div class="overlay">
+            <div class="loader"></div>
+            <div class="loader__text">
+                Khởi động hệ thống ...
+            </div>
+        </div>
+        <div class="overlay-black">
+            <div class="box__number">
+                <div class="num-text">Bạn đang nghĩ đến số:</div>
+                <div class="number"></div>
+                <button class="btn-close">
+                    Đóng
+                </button>
+            </div>
+
+        </div>
+        <div class="help">
+            Hãy nhập số mà bạn nghĩ trong đầu tôi sẽ đoán
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
