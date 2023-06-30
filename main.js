@@ -64,7 +64,7 @@ btn.addEventListener('click',function(){
             .then(function(data){
                 alert.style.animation = 'alertRemove linear 0.9s';
                 alert.style.opacity = '0';
-                var data = loadText.innerText = 'Lọc các số từ 1 đến 9 ...';
+                var data = loadText.innerText = 'Lọc các số từ 0 đến 9 ...';
                 return new Promise(function(resolve){
                     setTimeout(function(){
                         resolve(data);
@@ -91,7 +91,7 @@ btn.addEventListener('click',function(){
                 })
             })
     }else{
-        alert.innerText = 'Vui lòng nhập các số từ 1 đến 9999';
+        alert.innerText = 'Vui lòng nhập các số từ 0 đến 9999';
         alert.style = 'display: block; background-color: #ED4337;';
         setTimeout(function(){
             alert.style.animation = 'alertRemove linear 0.9s';
